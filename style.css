@@ -98,3 +98,8 @@ transition: 0.3s ease;
   font-size: 30px;
 }
 
+.text {
+  text-align:center ;
+  margin: 0 0 5px;
+}
+
