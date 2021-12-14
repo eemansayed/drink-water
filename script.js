@@ -3,6 +3,8 @@ const litres = document.getElementById("litres");
 const percentage = document.getElementById("percentage");
 const remained = document.getElementById("remained");
 
+updateBigCup();
+
 smallCups.forEach((cup, idx) => {
   cup.addEventListener("click", () => highlightCups(idx));
 });
@@ -23,4 +25,6 @@ function highlightCups(idx) {
       cup.classList.remove("full");
     }
   });
+
+  updateBigCup();
 }
